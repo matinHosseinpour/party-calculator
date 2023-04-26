@@ -35,7 +35,7 @@ const PersonsList = () => {
       newPerson.last_name !== "" &&
       searchInPersons(newPerson) == -1
     )
-      setPersons({ ...persons, {newPerson} });
+      setPersons({ ...persons });
   };
 
   useEffect(() => {console.log(persons)}, [persons])
